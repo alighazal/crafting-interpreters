@@ -28,6 +28,13 @@ public class Resolver implements Expr.Visitor<Void>, Stmt.Visitor<Void> {
         return null;
     }
 
+    @Override
+    public Void visitClassStmt(Stmt.Class stmt) {
+        declare(stmt.name);
+        define(stmt.name);
+        return null;
+    }
+
     void resolve(List<Stmt> statements) {
         for (Stmt statement : statements) {
             resolve(statement);
@@ -157,7 +164,7 @@ public class Resolver implements Expr.Visitor<Void>, Stmt.Visitor<Void> {
         if (currentFunction == FunctionType.NONE) {
             Lox.error(stmt.keyword, "Can't return from top-level code.");
         }
-        
+
         if (stmt.value != null) {
             resolve(stmt.value);
         }
