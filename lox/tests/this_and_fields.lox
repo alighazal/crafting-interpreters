@@ -1,3 +1,4 @@
+// Expected: The German chocolate cake is delicious!
 class Cake {
   taste() {
     var adjective = "delicious";
@@ -8,3 +9,4 @@ class Cake {
 var cake = Cake();
 cake.flavor = "German chocolate";
 cake.taste(); // Prints "The German chocolate cake is delicious!".
+

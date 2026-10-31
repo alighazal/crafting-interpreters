@@ -1,3 +1,5 @@
+// Expected: Bagel instance
 class Bagel {}
 var bagel = Bagel();
 print bagel; // Prints "Bagel instance".
+

@@ -1,3 +1,4 @@
+// Expected: DevonshireCream
 class DevonshireCream {
   serveOn() {
     return "Scones";
@@ -5,3 +6,4 @@ class DevonshireCream {
 }
 
 print DevonshireCream; // Prints "DevonshireCream".
+

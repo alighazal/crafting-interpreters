@@ -1,5 +1,7 @@
+// Expected: Hi, Dear Reader!
 fun sayHi(first, last) {
   print "Hi, " + first + " " + last + "!";
 }
 
 sayHi("Dear", "Reader");
+

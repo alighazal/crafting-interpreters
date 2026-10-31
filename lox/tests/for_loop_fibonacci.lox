@@ -1,3 +1,4 @@
+// Expected: Fibonacci numbers below 10000, one per line: 0 1 1 2 3 5 8 ... 6765
 var a = 0;
 var temp;
 
@@ -6,3 +7,4 @@ for (var b = 1; a < 10000; b = temp + b) {
   temp = a;
   a = b;
 }
+

@@ -1,3 +1,4 @@
+// Expected: A method
 class A {
   method() {
     print "A method";
@@ -17,3 +18,4 @@ class B < A {
 class C < B {}
 
 C().test();
+
